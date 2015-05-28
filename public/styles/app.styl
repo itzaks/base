@@ -1,0 +1,37 @@
+@import '../../node_modules/nib/lib/nib'
+@import '../../node_modules/jeet/stylus/jeet'
+@import '../../node_modules/rupture/rupture'
+@import 'mixins'
+@import 'typography'
+@import 'form'
+
+convert-ratio(ratio)
+  (ratio * 100) %
+
+global-reset()
+
+jeet.gutter = 6
+rupture.desktop-cutoff = 1040px
+
+ease = cubic-bezier(.86,0,.07,1)
+blue = #105CEC
+gray = #F4F4F4
+green = #01F073
+purple = #A295FB
+pink = #FFA2E2
+
+html,
+body
+  height: 100%
+
+img
+  max-width: 100%
+  margin-bottom: 0.5em
+
+a
+  word-wrap: break-word
+  -ms-word-break: break-all
+
++below(rupture.desktop-cutoff)
+  .column
+    stack()

@@ -1,0 +1,30 @@
+input, textarea, select, button
+  &.is-error {border-color: #DA1500; background: #FFE5E3}
+  &:focus {background: #fff}
+  display: block
+  width: 100%
+  outline: 0
+  padding: 0.65em 1em
+  box-sizing: border-box
+  border: 3px solid transparent
+  border-radius: 0
+  background: #f1f1f1
+  margin-bottom: 0.5em
+  transition: all 250ms
+  font-weight: 400
+  font-size: 1em
+
+input[type=submit],
+button
+  &:focus {background: #DA1500}
+  -webkit-appearance: none
+  background: #DA1500
+  border-radius: 0.3em
+  color: #fff
+  font-weight: 600
+  cursor: pointer
+  transition: background 250ms
+
+input[type=submit]:hover,
+button:hover
+  background: #ca0000
